@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="egco.com.mubus.SettingActivity"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Setting"
+        android:background="#465eb8"
+        android:id="@+id/textviewtop"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:autoText="false"
+        android:gravity="center" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="393dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Notice before :"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:textColor="#010d0f" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How To"
+            android:id="@+id/button"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:minWidth="200dp"
+            android:minHeight="60dp"
+            android:onClick="openTerm"
+            android:background="#465eb8" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:minHeight="30dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Route"
+            android:id="@+id/routeButton"
+            android:background="#465eb8"
+            android:textColor="#ffffef"
+            android:textSize="20dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="gotoRoute"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Favorite"
+            android:id="@+id/favButton"
+            android:background="#465eb8"
+            android:textColor="#ffffef"
+            android:textSize="20dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="gotoFav"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Setting"
+            android:id="@+id/settingButton"
+            android:background="#414e9c"
+            android:textColor="#ffffef"
+            android:textSize="20dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+</LinearLayout>

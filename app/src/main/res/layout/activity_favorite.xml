@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="egco.com.mubus.FavoriteActivity"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Favorite Route"
+        android:background="#465eb8"
+        android:id="@+id/textviewtop"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:autoText="false"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="393dp"
+        android:id="@+id/listView"
+        android:layout_weight="0.06"
+        android:choiceMode="multipleChoice" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Route"
+            android:id="@+id/routeButton"
+            android:background="#465eb8"
+            android:textColor="#ffffef"
+            android:textSize="20dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="gotoRoute" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Favorite"
+            android:id="@+id/favButton"
+            android:background="#414e9c"
+            android:textColor="#ffffef"
+            android:textSize="20dp"
+            android:layout_marginBottom="0dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Setting"
+            android:id="@+id/settingButton"
+            android:background="#465eb8"
+            android:textColor="#ffffef"
+            android:textSize="20dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="gotoSetting" />
+    </LinearLayout>
+
+</LinearLayout>
